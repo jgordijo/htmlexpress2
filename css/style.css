@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.center{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+header{
+	background: #5e3ea1;
+	padding: 10px 0;
+}
+
+
+.logo{
+	font-size: 21px;
+	width: 50%;
+	float: left;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;
+}
+
+/*Menu Desktop*/
+nav.menu-desktop{
+	width: 50%;
+	text-align: right;
+	float: right;
+}
+
+
+nav.menu-desktop ul{
+	list-style-type: none;
+}
+
+nav.menu-desktop li {
+	margin-right: 10px;
+	display: inline-block;
+	font-size: 15px;
+}
+
+nav.menu-desktop li.selected{font-weight: bold;}
+
+
+nav.menu-desktop a{
+	color: white;
+}
+
+/*Menu Mobile*/
+nav.menu-mobile{
+	display: none;
+	float: right;
+	padding: 0 10px;
+}
+
+nav.menu-mobile ul{
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected{
+	background: rgb(225,225,225);	
+}
+
+nav.menu-mobile h2:hover{
+	cursor: pointer;
+}
+
+nav.menu-mobile h2{
+	color: white;
+
+}
+
+nav.menu-mobile a{
+	display: block;
+	color: black;
+}
+
+section.texto-chamada{
+	background: #4c3282;
+	padding: 30px 0;
+	text-align: center;
+	color:	white;
+}
+
+section.texto-chamada i{
+	font-size: 30px;
+}
+
+section.texto-chamada h2,
+section.texto-chamada h3{
+	font-weight: normal;
+}
+
+section.texto-chamada h2 > b{
+	color: rgb(231, 66, 107);
+}
+
+section.loja{
+	padding: 30px 0;
+}
+
+section.loja > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.loja h2{
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: -0.3px;
+	padding: 0 20%;
+	color: #646464;
+}
+
+.box-single-loja{
+	border: 1px solid rgb(225,225,255);
+	height: 100%;
+}
+
+.box-single-loja img{
+	max-width: 100%;
+}
+
+.loja-wraper{
+	width: 33.3%;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.loja-wraper a{
+	color: white;
+	background: #5fb382;
+	padding: 10px 8px;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.loja-wraper a:hover{
+	background: #5ed690;
+}
+
+.box-single-loja h2{
+	text-align: center;
+	padding: 0 8px;
+	font-weight: normal;
+}
+
+.box-single-loja p{
+	padding: 15px 8px;
+	font-size: 15px;
+	color: rgb(10,10,10);
+}
+
+
+.w50{
+	float: left;
+	width: 50%;
+	padding: 0 15px;
+}
+
+.w50 h1{
+	font-size: 26px;
+	font-weight: normal;
+	color: #4b4b4b;
+	margin-bottom: 15px;
+}
+
+section.novidades{
+	padding: 30px 0;
+
+}
+
+.box-single-noticia{
+	padding-left: 20px 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.box-single-noticia h2{
+	font-size: 21px;
+	font-weight: bold;
+	color: rgb(100,100,100);
+}
+
+.box-single-noticia p{
+	font-size: 16px;
+	font-weight: normal;
+	color: rgb(110,110,110);
+}
+
+.depoimentos ul{
+	list-style-position: inside;
+}
+
+.depoimentos li{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: rgb(110,110,110);
+}
+
+
+footer{
+	padding: 20px 0;
+	background: #3c2e58;
+	color: white;
+	text-align: center;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 768px){
+	.loja-wraper{
+		width: 100%;
+		max-width: 500px;
+		margin: 30px auto;
+	}
+
+.w50{width: 100%;margin-bottom: 30px;}
+
+
+}
+
+
+@media screen and (max-width: 500px){
+	nav.menu-mobile{
+		display: block;
+	}
+	nav.menu-desktop{
+		display: none;
+	}
+}
